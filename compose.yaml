@@ -1,0 +1,24 @@
+services:
+  web:
+    image: node:24-slim
+    container_name: xyz-react
+    volumes:
+      - .:/app
+    working_dir: /app
+    ports:
+      - "5173:5173"
+    command: sh -c "npm install && npm run dev -- --host"
+
+##Para correr la primera vez
+##
+##  docker compose run --rm web npm create vite@latest . -- --template react
+##
+##  docker compose run: Ejecuta una tarea usando la configuración del archivo yaml.
+##  --rm: Le dice a Docker: "Una vez que termines de crear el proyecto, borra el contenedor temporal para no dejar basura".
+##  web: El nombre del servicio en tu archivo yaml.
+##  npm create vite@latest . -- --template react: La instrucción real de Node para crear React usando la plantilla limpia de Vite en la carpeta actual (.
+
+##  PARA CORRER REACT (ESTA VEZ DE)
+##
+##  docker compose up
+##
