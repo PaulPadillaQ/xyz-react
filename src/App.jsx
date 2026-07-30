@@ -25,7 +25,7 @@ function App() {
       </nav>
 
       {/* HERO */}
-      <header id="sobre-mi" className="max-w-4xl mx-auto px-6 py-20 flex flex-col sm:flex-row items-center gap-10">
+      <header id="sobre-mi" className="max-w-4xl mx-auto px-16 py-24 flex flex-col sm:flex-row items-center gap-8">
 
         {/* Foto */}
         <div className="relative shrink-0">
@@ -47,16 +47,16 @@ function App() {
         {/* Copy */}
         <div className="text-center sm:text-left">
           <span className="inline-block bg-[#3fae67]/15 border border-[#3fae67] text-[#6ecb8e] text-xs px-3 py-1 rounded-full mb-3">
-            ● Disponible para Backend / .NET
+            ● Disponible para Desarrollo / .NET / Infraestructura
           </span>
           <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-slate-50">
-            Hola, soy <span className="text-[#e6a94a]">Paul Padilla</span>
+            Hola, soy <span className="text-[#e6a94a]">PAUL PADILLA</span>
           </h1>
           <p className="mt-2 text-lg text-slate-300 font-medium">
             Desarrollador .NET con visión en infraestructura
           </p>
           <p className="mt-3 text-sm text-slate-400 leading-relaxed max-w-md">
-            Migración a .NET 9, arquitectura backend con Entity Framework y automatización
+            Experiencia en Migración a .NET 9, arquitectura backend con Entity Framework y automatización
             inteligente de procesos de TI.
           </p>
           <div className="mt-6 flex gap-3 justify-center sm:justify-start">
@@ -64,7 +64,7 @@ function App() {
               href="#proyectos"
               className="bg-[#e6a94a] hover:bg-[#d99a3a] text-[#1a1206] font-medium text-sm px-5 py-2.5 rounded-lg transition-all"
             >
-              Ver casos de estudio
+              Experiencia
             </a>
             <a
               href="https://wa.me/51916496423?text=Hola%20Paul%2C%20vi%20tu%20portafolio%20y%20quisiera%20conversar%20sobre%20una%20oportunidad"
@@ -83,7 +83,7 @@ function App() {
         <div className="max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-6 text-center px-6">
           <div>
             <p className="text-xl font-semibold text-slate-50">+180</p>
-            <p className="text-[11px] text-slate-500 mt-1">Servidores monitoreados</p>
+            <p className="text-[11px] text-slate-500 mt-1">Proyecto con Servidores monitoreados</p>
           </div>
           <div>
             <p className="text-xl font-semibold text-[#4dc3b4]">~20</p>
@@ -101,25 +101,49 @@ function App() {
       </section>
 
       {/* CASOS DE ESTUDIO */}
-      <section id="proyectos" className="max-w-4xl mx-auto px-6 py-20">
-        <h2 className="text-xl font-semibold text-slate-100 mb-8 text-center sm:text-left">
-          Casos de estudio
+      <section id="proyectos" className="max-w-7xl mx-auto px-6 py-20">
+        <h2 className="text-2xl font-semibold text-slate-100 mb-8 text-center sm:text-left">
+          EXPERIENCIA DESTACADA
         </h2>
 
-        <div className="grid gap-6 sm:grid-cols-2">
+        <div className="grid gap-8 sm:grid-cols-3">
+
+          <div className="bg-[#11161d] border border-[#1c2128] rounded-2xl p-6 text-left hover:border-[#2d3541] transition-all">
+            <span className="inline-block bg-[#e6a94a]/15 text-[#e6a94a] text-[10px] font-medium px-2.5 py-1 rounded mb-3">
+              Modernización .NET
+            </span>
+            <h3 className="text-base font-semibold text-slate-100">Migración ERP .NET 9</h3>
+            <p className="mt-2 text-sm text-slate-400 leading-relaxed">
+              Migración de ERP de .Net Framework 4.8.1 a .NET 9 sin detener operaciones críticas del negocio.
+            </p>
+            <div className="mt-4 bg-[#0a0e14] rounded-lg p-3 text-xs leading-relaxed space-y-1">
+              <p><span className="text-[#6ecb8e] font-medium">Problema:</span> <span className="text-slate-300">
+                ERP corporativo sobre tecnología legacy (.NET Framework 4.8.1), limitando rendimiento y mantenibilidad.
+                </span></p>
+              <p><span className="text-[#e6a94a] font-medium">Solución:</span> <span className="text-slate-300">
+                Migración progresiva de módulos (de un total de ~20) a .NET 9.
+                </span></p>
+              <p><span className="text-[#4dc3b4] font-medium">Impacto:</span> <span className="text-slate-300">
+                Base tecnológica modernizada para escalar el sistema a futuro.
+                </span></p>
+            </div>
+          </div>
 
           <div className="bg-[#11161d] border border-[#1c2128] rounded-2xl p-6 text-left hover:border-[#2d3541] transition-all">
             <span className="inline-block bg-[#e6a94a]/15 text-[#e6a94a] text-[10px] font-medium px-2.5 py-1 rounded mb-3">
               Backend y modernización
             </span>
-            <h3 className="text-base font-semibold text-slate-100">API puente y migración ERP</h3>
+            <h3 className="text-base font-semibold text-slate-100">API puente de reportes CrystalReports</h3>
             <p className="mt-2 text-sm text-slate-400 leading-relaxed">
-              Migración de reportes en C# a .NET 9 sin detener operaciones críticas del negocio.
+              Desarrollo de una API puente en C# para conectar el módulo de reportes (Crystal Reports) con la nueva arquitectura en .NET 9.
             </p>
             <div className="mt-4 bg-[#0a0e14] rounded-lg p-3 text-xs leading-relaxed space-y-1">
-              <p><span className="text-[#6ecb8e] font-medium">Problema:</span> <span className="text-slate-300">Incompatibilidad al migrar a .NET 9.</span></p>
-              <p><span className="text-[#e6a94a] font-medium">Solución:</span> <span className="text-slate-300">API REST intermedia con Swagger.</span></p>
-              <p><span className="text-[#4dc3b4] font-medium">Impacto:</span> <span className="text-slate-300">Migración gradual, cero downtime.</span></p>
+              <p><span className="text-[#6ecb8e] font-medium">Problema:</span> <span className="text-slate-300">
+                Incompatibilidad directa entre Crystal Reports y .NET.</span></p>
+              <p><span className="text-[#e6a94a] font-medium">Solución:</span> <span className="text-slate-300">
+                API REST intermedia para desacoplar el reporting de la migración.</span></p>
+              <p><span className="text-[#4dc3b4] font-medium">Impacto:</span> <span className="text-slate-300">
+                Migración gradual de la generacion de reportes con cero downtime.</span></p>
             </div>
           </div>
 
@@ -158,7 +182,7 @@ function App() {
 
       {/* TERMINAL */}
       <section className="max-w-4xl mx-auto px-6 py-20">
-        <h2 className="text-xl font-semibold text-slate-100 mb-6">Terminal interactiva</h2>
+        <h2 className="text-xl font-semibold text-slate-100 mb-6">Terminal</h2>
         <div className="bg-[#0a0e14] border border-[#1c2128] rounded-xl overflow-hidden">
           <div className="bg-[#11161d] px-4 py-2 flex items-center gap-2">
             <span className="w-2.5 h-2.5 rounded-full bg-[#e2504f]"></span>
