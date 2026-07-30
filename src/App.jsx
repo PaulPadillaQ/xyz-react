@@ -25,7 +25,7 @@ function App() {
       </nav>
 
       {/* HERO */}
-      <header id="sobre-mi" className="max-w-4xl mx-auto px-16 py-24 flex flex-col sm:flex-row items-center gap-8">
+      <header id="sobre-mi" className="max-w-4xl mx-auto px-16 py-16 flex flex-col sm:flex-row items-center gap-8">
 
         {/* Foto */}
         <div className="relative shrink-0">
@@ -50,7 +50,7 @@ function App() {
             ● Disponible para Desarrollo / .NET / Infraestructura
           </span>
           <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-slate-50">
-            Hola, soy <span className="text-[#e6a94a]">PAUL PADILLA</span>
+            Hola, soy <span className="text-[#e6a94a]">Paul Padilla Q.</span>
           </h1>
           <p className="mt-2 text-lg text-slate-300 font-medium">
             Desarrollador .NET con visión en infraestructura
@@ -65,6 +65,14 @@ function App() {
               className="bg-[#e6a94a] hover:bg-[#d99a3a] text-[#1a1206] font-medium text-sm px-5 py-2.5 rounded-lg transition-all"
             >
               Experiencia
+            </a>
+            <a
+              href="/CV-Paul-Padilla.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-[#2d3541] hover:border-[#e6a94a] text-slate-200 font-medium text-sm px-5 py-2.5 rounded-lg transition-all min-w-[130px] inline-flex items-center justify-center gap-2"
+            >
+              📄 Ver CV
             </a>
             <a
               href="https://wa.me/51916496423?text=Hola%20Paul%2C%20vi%20tu%20portafolio%20y%20quisiera%20conversar%20sobre%20una%20oportunidad"
